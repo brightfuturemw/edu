@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Future Nursery School | Coming Soon</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+    background: linear-gradient(to top, #fff1f9, #dff6ff);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+/* Floating ABC letters */
+.letters span {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 800;
+    animation: float 6s infinite ease-in-out;
+    opacity: 0.8;
+}
+
+.letters span:nth-child(1) { left: 10%; animation-delay: 0s; color:#ff6b6b;}
+.letters span:nth-child(2) { left: 30%; animation-delay: 1s; color:#4d96ff;}
+.letters span:nth-child(3) { left: 50%; animation-delay: 2s; color:#6bcb77;}
+.letters span:nth-child(4) { left: 70%; animation-delay: 3s; color:#ffcc00;}
+.letters span:nth-child(5) { left: 85%; animation-delay: 4s; color:#b28dff;}
+
+@keyframes float {
+    0% { top: 100%; transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
+    100% { top: -10%; transform: rotate(-15deg); }
+}
+
+/* Main Container */
+.container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff6b6b;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    color: #4d96ff;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Dancing Dolls */
+.dolls {
+    margin: 20px 0;
+}
+
+.doll {
+    display: inline-block;
+    font-size: 60px;
+    margin: 0 15px;
+    animation: dance 1s infinite alternate ease-in-out;
+}
+
+.doll:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+@keyframes dance {
+    from { transform: rotate(-15deg) translateY(0); }
+    to { transform: rotate(15deg) translateY(-15px); }
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<div class="letters">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+    <span>1</span>
+    <span>2</span>
+</div>
+
+<div class="container">
+    <h1>🌈 Bright Future Nursery School</h1>
+    <h2>Website Coming Soon!</h2>
+
+    <div class="dolls">
+        <span class="doll">🧸</span>
+        <span class="doll">🪆</span>
+    </div>
+
+    <p>
+        Where little learners laugh, play, sing and grow every day!
+        Our joyful learning world is almost ready.
+    </p>
+
+    <a class="whatsapp-btn" href="https://wa.me/27683514680" target="_blank">
+        💬 Chat With Us on WhatsApp
+    </a>
+
+    <div class="footer">
+        Contact: +27 68 351 4680
+    </div>
+</div>
+
+</body>
+</html>
